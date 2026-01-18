@@ -26,7 +26,7 @@ export class FaceSnapComponent implements OnInit {
     this.userHasSnapped = false;
   }
 
-  onToggleSnap(): void {
+  toggleSnap(): void {
     if (this.userHasSnapped) {
       this.unSnap();
     } else {
@@ -38,7 +38,7 @@ export class FaceSnapComponent implements OnInit {
 
   snap(): void {
     this.snaps++;
-    this.snapButtonText = 'Oops,  unsnap!';
+    this.snapButtonText = 'Oops, unsnap!';
   }
 
   unSnap(): void {
