@@ -9,37 +9,40 @@ import { FaceSnap } from './models/face-snap';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+  faceSnaps!: FaceSnap[];
   bulbizarreSnap!: FaceSnap;
   carapuceSnap!: FaceSnap;
   salamecheSnap!: FaceSnap;
 
   ngOnInit(): void {
-    this.bulbizarreSnap = new FaceSnap(
-      'Bulbizarre',
-      'Pokémon plante',
-      '/snaps/bulbizarre.png',
-      new Date(),
-      1,
-    );
+    this.faceSnaps = [
+      new FaceSnap(
+        'Bulbizarre',
+        'Pokémon plante',
+        '/snaps/bulbizarre.png',
+        new Date(),
+        1,
+      ),
 
-    this.carapuceSnap = new FaceSnap(
-      'Carapuce',
-      'Pokémon eau',
-      '/snaps/carapuce.png',
-      new Date(),
-      2,
-    );
+      new FaceSnap(
+        'Carapuce',
+        'Pokémon eau',
+        '/snaps/carapuce.png',
+        new Date(),
+        2,
+      ),
 
-    this.salamecheSnap = new FaceSnap(
-      'Salamèche',
-      'Pokémon feu',
-      '/snaps/salameche.png',
-      new Date(),
-      3,
-    );
+      new FaceSnap(
+        'Salamèche',
+        'Pokémon feu',
+        '/snaps/salameche.png',
+        new Date(),
+        3,
+      ),
+    ];
 
-    this.bulbizarreSnap.setLocation('Pokéball de gauche');
-    this.carapuceSnap.setLocation('Pokéball du milieu');
-    this.salamecheSnap.setLocation('Pokéball de droite');
+    this.faceSnaps[0].setLocation('Pokéball de gauche');
+    this.faceSnaps[1].setLocation('Pokéball du milieu');
+    this.faceSnaps[2].setLocation('Pokéball de droite');
   }
 }
