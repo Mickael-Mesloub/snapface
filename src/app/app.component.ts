@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
         'Pokémon plante',
         '/snaps/bulbizarre.png',
         new Date(),
-        1,
+        209,
       ),
 
       new FaceSnap(
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         'Pokémon eau',
         '/snaps/carapuce.png',
         new Date(),
-        2,
+        144,
       ),
 
       new FaceSnap(
@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
         'Pokémon feu',
         '/snaps/salameche.png',
         new Date(),
-        3,
+        57,
       ),
     ];
 
