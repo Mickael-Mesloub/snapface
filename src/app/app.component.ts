@@ -37,5 +37,9 @@ export class AppComponent implements OnInit {
       new Date(),
       3,
     );
+
+    this.bulbizarreSnap.setLocation('Pokéball de gauche');
+    this.carapuceSnap.setLocation('Pokéball du milieu');
+    this.salamecheSnap.setLocation('Pokéball de droite');
   }
 }
