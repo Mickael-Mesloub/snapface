@@ -17,24 +17,24 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.faceSnaps = [
       new FaceSnap(
-        'Bulbizarre',
-        'Pokémon plante',
+        'bulbizarre',
+        'type plante',
         '/snaps/bulbizarre.png',
         new Date(),
         209,
       ),
 
       new FaceSnap(
-        'Carapuce',
-        'Pokémon eau',
+        'carapuce',
+        'type eau',
         '/snaps/carapuce.png',
         new Date(),
         144,
       ),
 
       new FaceSnap(
-        'Salamèche',
-        'Pokémon feu',
+        'salamèche',
+        'type feu',
         '/snaps/salameche.png',
         new Date(),
         57,
